@@ -1,17 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form">
-            <input type="text" class="text"/> <!-- Changed class name to "text" -->
-            <input type="submit" class="add" value="add task">
+    <div class="main-container">
+        <div class="task-container">
+            <div class="container">
+                <h1 class="title">Plan to Succeed</h1>
+                <div class="form">
+                    <input type="text" class="text-input" placeholder="Enter a new task"/>
+                    <input type="submit" class="add-btn" value="Add Task">
+                </div>
+                <div id="taskDiv" class="tasks"></div>
+            </div>
         </div>
-        <div class="tasks"></div>
     </div>
-    <script src="script.js" type="module"></script> <!-- Added type="module" -->
+    <script src="script.js" type="module"></script>
 </body>
 </html>
